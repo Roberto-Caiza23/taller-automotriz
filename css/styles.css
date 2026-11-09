@@ -1,0 +1,156 @@
+/* ===== Base (tomada de tu CSS) ===== */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #000000, #3a3a3a);
+  background-attachment: fixed;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main{ flex: 1; }
+
+.contenedor{
+  background-color: rgb(255, 250, 240);
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.contenedor.ancho{ width: 760px; }
+
+h1{
+  text-align: center;
+  color: rgb(255, 131, 127);
+  margin-bottom: 10px;
+}
+
+.subtitulo{
+  text-align: center;
+  color: #6b6b6b;
+  margin-bottom: 25px;
+}
+
+label{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #5a4a3a;           /* bisque era ilegible sobre fondo crema */
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8cfc2;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background: #fff;
+}
+
+input:focus, select:focus, textarea:focus{
+  outline: none;
+  border-color: #df7c0b;
+  box-shadow: 0 0 0 3px rgba(223, 124, 11, .2);
+}
+
+.detalle{
+  color: #1d4ed8;
+  font-size: 13px;
+  margin-top: 18px;
+  line-height: 1.6;
+}
+
+.botones{
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+button{ cursor: pointer; }
+
+.botones button{
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-enviar{ background-color: #df7c0b; color: #fff; }
+.btn-enviar:hover{ background-color: #2dd70b; color: #000; }
+
+.btn-limpiar{ background-color: #e9e2d6; color: #333; }
+.btn-limpiar:hover{ background-color: #09afe1; color: #fff; }
+
+/* ===== Navegación ===== */
+.barra{ background: #000; border-bottom: 3px solid #df7c0b; }
+.barra .nav-link{ color: #f1e7d8; }
+.barra .nav-link:hover,
+.barra .nav-link.activo{ color: rgb(255, 131, 127); }
+
+.btn-naranja{ background: #df7c0b; color: #fff; border: none; }
+.btn-naranja:hover{ background: #2dd70b; color: #000; }
+
+/* ===== Inicio ===== */
+.hero{
+  text-align: center;
+  color: #fff;
+  padding: 60px 15px 40px;
+}
+.hero h1{ font-size: clamp(2rem, 5vw, 3.2rem); }
+.hero .lead{ max-width: 620px; margin: 0 auto 24px; color: #e6e6e6; }
+
+.tarjeta{
+  background: rgb(255, 250, 240);
+  border-radius: 12px;
+  padding: 22px;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+.tarjeta h2{ font-size: 1.15rem; color: #df7c0b; }
+.tarjeta p{ margin: 0; color: #444; }
+.tarjeta .precio{ font-weight: bold; color: #1d4ed8; margin-top: 10px; display: block; }
+
+.titulo-claro{ color: rgb(255, 131, 127); text-align: left; margin-bottom: 20px; }
+
+/* ===== Formulario ===== */
+.seccion{
+  font-size: 1.05rem;
+  color: #df7c0b;
+  border-bottom: 1px solid #e3d9c8;
+  padding-bottom: 4px;
+  margin-top: 26px;
+}
+.opciones{ display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.opcion{ display: flex; align-items: center; gap: 6px; font-weight: normal; margin: 0; }
+.opcion input{ width: auto; margin: 0; }
+
+input.invalido, select.invalido, textarea.invalido{ border-color: #dc3545; }
+
+/* ===== Tablas ===== */
+.tabla-caja{
+  background: rgb(255, 250, 240);
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+.tabla-caja .table{ --bs-table-bg: transparent; }
+.tabla-caja th{ color: #5a4a3a; white-space: nowrap; }
+.tabla-caja select{ padding: 6px; font-size: 13px; min-width: 130px; }
+
+/* ===== Perfil ===== */
+.perfil dt{ color: #5a4a3a; margin-top: 12px; }
+.perfil dd{ margin: 0; color: #222; }
+
+/* ===== Footer ===== */
+.pie{ background: #000; color: #bbb; border-top: 3px solid #df7c0b; }
+
+@media (max-width: 576px){
+  .contenedor{ padding: 20px; }
+}
