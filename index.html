@@ -168,14 +168,9 @@
             <label class="form-check-label" for="prioUrgente">Urgente</label>
           </div>
 
-          <p class="mb-1">Servicios adicionales (opcional)</p>
-          <div class="form-check form-check-inline">
+          <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" name="extras" id="extraLavado" value="Lavado">
-            <label class="form-check-label" for="extraLavado">Lavado</label>
-          </div>
-          <div class="form-check form-check-inline mb-3">
-            <input class="form-check-input" type="checkbox" name="extras" id="extraLlantas" value="Llantas">
-            <label class="form-check-label" for="extraLlantas">Revisión de llantas</label>
+            <label class="form-check-label" for="extraLavado">Incluir lavado del vehículo (opcional)</label>
           </div>
 
           <div class="row">
@@ -185,7 +180,19 @@
             </div>
             <div class="col-md-6 mb-3">
               <label for="solHora" class="form-label">Hora (08:00 a 17:00)</label>
-              <input type="time" id="solHora" class="form-control">
+              <select id="solHora" class="form-select">
+                <option value="">Seleccione la hora</option>
+                <option>08:00</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+              </select>
             </div>
           </div>
 

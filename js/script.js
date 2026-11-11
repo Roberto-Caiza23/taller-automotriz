@@ -34,7 +34,7 @@ const solicitudesIniciales = [
   { id: 2, propietario: "cliente2", nombre: "Juan Pérez", telefono: "0976543210", email: "juan@mail.com",
     placa: "GTC-567", marca: "Toyota", modelo: "Hilux", anio: 2021, kilometraje: 31000,
     servicio: "Revisión de frenos", prioridad: "Urgente", extras: [],
-    fecha: "2026-12-11", hora: "14:30", observaciones: "Los frenos vibran.", estado: "En proceso" }
+    fecha: "2026-12-11", hora: "14:00", observaciones: "Los frenos vibran.", estado: "En proceso" }
 ];
 
 let solicitudes = [];      // aquí se guardan todas las solicitudes
