@@ -42,11 +42,18 @@
     <!-- INICIO -->
     <section id="inicio" class="seccion">
       <div class="tarjeta">
-        <h1>Bienvenido al Taller Cordillera</h1>
-        <p>Solicita el mantenimiento de tu vehículo en línea y consulta el estado de tus solicitudes.</p>
-        <p>Atendemos de lunes a sábado, de 08:00 a 17:00.</p>
-        <button class="btn btn-warning" onclick="nuevaSolicitud()">Solicitar mantenimiento</button>
-        <button class="btn btn-secondary" onclick="mostrarSeccion('servicios')">Ver servicios</button>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1>Bienvenido al Taller Cordillera</h1>
+            <p>Solicita el mantenimiento de tu vehículo en línea y consulta el estado de tus solicitudes.</p>
+            <p>Atendemos de lunes a sábado, de 08:00 a 17:00.</p>
+            <button class="btn btn-warning" onclick="nuevaSolicitud()">Solicitar mantenimiento</button>
+            <button class="btn btn-secondary" onclick="mostrarSeccion('servicios')">Ver servicios</button>
+          </div>
+          <div class="col-md-6 text-center mt-4 mt-md-0">
+            <img src="img/carro-tuneado.svg" alt="Auto deportivo tuneado con las letras RM" class="imagen-carro">
+          </div>
+        </div>
       </div>
     </section>
 

@@ -8,7 +8,7 @@
 
 // Array de objetos: usuarios de prueba (3 usuarios activos + 1 deshabilitado)
 const usuarios = [
-  { usuario: "admin", clave: "admin123", rol: "Administrador", nombre: "Carlos Mendoza", email: "admin@taller.com", telefono: "0991112233", activo: true },
+  { usuario: "admin", clave: "admin123", rol: "Administrador", nombre: "Roberto Morales", email: "admin@taller.com", telefono: "0991112233", activo: true },
   { usuario: "cliente1", clave: "cliente123", rol: "Cliente", nombre: "María López", email: "maria@mail.com", telefono: "0987654321", activo: true },
   { usuario: "cliente2", clave: "cliente123", rol: "Cliente", nombre: "Juan Pérez", email: "juan@mail.com", telefono: "0976543210", activo: true },
   { usuario: "bloqueado", clave: "bloqueado123", rol: "Cliente", nombre: "Usuario Bloqueado", email: "x@mail.com", telefono: "0960000000", activo: false }
